@@ -37,6 +37,7 @@ body {
         height: .5rem;
         margin: 1rem 0;
         border-right: 4.8rem solid #fff;
+        box-shadow: 0px 0px 5px #000000;
         -webkit-transition: all 600ms ease-in-out;
         -moz-transition: all 600ms ease-in-out;
         -ms-transition: all 600ms ease-in-out;
@@ -68,6 +69,7 @@ body {
     transform: translateY(10px);
     border-right: 4.8rem solid #464646 !important; }
   body .pushed .menu_button .bar:nth-of-type(2) {
+    box-shadow: 0px 0px 0px #000000 !important;
     border-right: 4.8rem solid #464646 !important;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -123,14 +125,38 @@ body {
   body .nav-left {
     left: 0 !important; }
   body #main {
+    background: url("../img/header.jpg");
     background-size: cover;
-    height: 100vh;
-    background: url("../img/temp.jpg"); }
-    body #main #logo h3 {
-      font-family: Open Sans Bold;
-      font-size: 4rem;
-      color: #fff;
-      margin-top: 13px;
-      padding-bottom: 5px; }
+    height: 100vh; }
+    body #main .parent-container {
+      position: relative; }
+      body #main .parent-container #logo {
+        position: fixed;
+        left: 125;
+        -moz-transition: 600ms;
+        transition: 600ms; }
+        body #main .parent-container #logo h3 {
+          position: absolute;
+          font-family: Playfair Display Regular;
+          font-size: 4rem;
+          color: #fff;
+          margin-top: 13px;
+          padding-bottom: 5px;
+          text-shadow: 0px 0px 5px #000000; }
+          body #main .parent-container #logo h3 span {
+            position: absolute;
+            color: #ccffdd;
+            top: 0;
+            left: 210; }
+    body #main .logo-left {
+      left: 470 !important; }
+    body #main #quote {
+      visibility: hidden; }
+      body #main #quote span:nth-child(1) {
+        postion: absolute;
+        font-family: Playfair Display Regular;
+        font-size: 10rem;
+        top: 50%;
+        left: 0; }
 
 /*# sourceMappingURL=styles.css.map */
