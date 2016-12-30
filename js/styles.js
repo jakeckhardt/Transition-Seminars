@@ -10,3 +10,12 @@ $(".menu_button").click(function(event) {
   $("#nav").toggleClass("nav-left");
   $("#logo").toggleClass("logo-left");
 });
+
+
+/*
+$(window).scroll(function() {
+	$(window).scroll( 1080, function() {
+		$("#quote").fadeOut();
+	})
+});
+*/

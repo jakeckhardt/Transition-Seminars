@@ -1,12 +1,15 @@
 @font-face {
-	font-family: Open Sans Bold;
-	src: url("../fonts/OpenSans-Bold.ttf");
+	font-family: Open Sans Condensed Bold;
+	src: url("../fonts/OpenSans-CondBold.ttf");
 }
 
 @font-face {
 	font-family: Playfair Display Regular;
 	src: url("../fonts/PlayfairDisplay-Regular.ttf");
 }
+
+
+
 
 
 
@@ -19,14 +22,14 @@
 }
 
 
-body {
 
-	height: 2000px;
+
+body {
 	font-size: 16px;
 	
 
 	#main {
-		background-color: #464646;
+
 		width: 100%;
 		transition: 600ms ease;
 	}
@@ -59,7 +62,6 @@ body {
 				height: .5rem;
 				margin: 1rem 0;
 				border-right: 4.8rem solid #fff;
-				box-shadow: 0px 0px 5px #000000;
 				-webkit-transition: all 600ms ease-in-out;
 				-moz-transition: all 600ms ease-in-out;
 				-ms-transition: all 600ms ease-in-out;
@@ -109,7 +111,6 @@ body {
 		}
 
 		.bar:nth-of-type(2){
-			box-shadow: 0px 0px 0px #000000 !important;
 			border-right: 4.8rem solid #464646 !important;
 			-webkit-transform: rotate(-45deg);
 			-moz-transform: rotate(-45deg);
@@ -150,7 +151,7 @@ body {
 
 		list-style-type: none;
 		
-		font-family: Open Sans Bold;
+		font-family: Open Sans Condensed Bold;
 	
 
 		li {
@@ -210,7 +211,9 @@ body {
 	#main {
 		background: url("../img/header.jpg");
 		background-size: cover;
+		background-position: center;
 		height: 100vh;
+		background-attachment: fixed;
 
 
 		.parent-container {
@@ -218,25 +221,27 @@ body {
 
 			#logo {
 				position: fixed;
-				left:125;
+				left:75;
 				-moz-transition: 600ms;
 				transition: 600ms;
+				z-index:9;
 
 
 				h3 {
 					position: absolute;
 					font-family: Playfair Display Regular;
-					font-size: 4rem;
+					font-size: 3.75rem;
 					color: #fff;
-					margin-top: 13px;
+					margin-top: 16px;
 					padding-bottom: 5px;
-					text-shadow: 0px 0px 5px #000000;
+					transition: 600ms;
 
 					span {
 						position: absolute;
 						color: #ccffdd;
 						top: 0;
-						left: 210;
+						left: 195;
+						transition: 600ms;
 					}
 				}
 			}
@@ -244,19 +249,76 @@ body {
 		}
 
 		.logo-left {
-		left: 470 !important;
+
+
+			h3 {
+				color: #464646 !important;
+
+				span {
+					color: #464646 !important;
+
+				}
+			}
 		}
 
 		#quote {
-			visibility: hidden;
+			position: absolute;
+			width: 100%;
 
 			span:nth-child(1) {
-				postion: absolute;
-				font-family: Playfair Display Regular;
+				position: relative;
+				font-family: Open Sans Condensed Bold;
 				font-size: 10rem;
-				top: 50%;
-				left:0;
+				color: #ccffdd;
+				text-shadow: 0 0 10px #464646;
+				top: 250;
 			}
+
+			span:nth-child(2) {
+				position: relative;
+				font-family: Playfair Display Regular;
+				font-size: 7rem;
+				color: #ccffdd;
+				text-shadow: 0 0 10px #464646;
+				top: 300;
+
+			}
+
+			span:nth-child(3) {
+				position: relative;
+				font-family: Open Sans Condensed Bold;
+				font-size: 10rem;
+				color: #ccffdd;
+				text-shadow: 0 0 10px #464646;
+				top: 370;
+
+			}
+		}
+	}
+
+	#intro {
+		background: #ffffff;
+
+		p {
+			font-family: Playfair Display Regular;
+			font-size: 2.5rem;
+			padding: 45px 0;
+			line-height: 40px;
+		}
+	}
+
+	#three_values {
+		background-color: #ccffdd;
+		padding: 50px 0;
+
+		span {
+			font-family: Open Sans Condensed Bold;
+			font-size: 3rem;
+		}
+
+		p {
+			font-family: Playfair Display Regular;
+			font-size: 2rem;
 		}
 	}
 }
