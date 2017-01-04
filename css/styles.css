@@ -15,15 +15,15 @@ body {
   font-size: 16px; }
   body #main {
     width: 100%;
-    transition: 600ms ease; }
-  body .main-left {
-    position: absolute;
-    left: 470 !important;
-    transition: 600ms ease; }
+    background: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed; }
   body #menu_button_container {
     position: fixed;
     margin-top: 10px;
-    z-index: 10;
+    z-index: 99;
     width: 0;
     transition: .3s; }
     body #menu_button_container .menu_button {
@@ -91,7 +91,7 @@ body {
     margin-left: -15px;
     font-size: 5rem;
     padding-top: 75px;
-    z-index: 9;
+    z-index: 15;
     left: -470;
     transition: 600ms;
     list-style-type: none;
@@ -124,61 +124,55 @@ body {
             width: 100%; }
   body .nav-left {
     left: 0 !important; }
-  body #main {
-    background: url("../img/header.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed; }
-    body #main .parent-container {
-      position: relative; }
-      body #main .parent-container #logo {
-        position: absolute;
-        left: 100; }
-        body #main .parent-container #logo h3 {
-          position: absolute;
-          font-family: Playfair Display Regular;
-          font-size: 3.75rem;
-          color: #fff;
-          margin-top: 16px;
-          padding-bottom: 5px;
-          transition: 600ms; }
-          body #main .parent-container #logo h3 span {
-            position: absolute;
-            color: #ccffdd;
-            top: 0;
-            left: 195;
-            transition: 600ms; }
-    body #main .logo-left h3 {
-      color: #464646 !important; }
-      body #main .logo-left h3 span {
-        color: #464646 !important; }
-    body #main #quote {
+  body #main .parent-container {
+    position: relative; }
+    body #main .parent-container #logo {
       position: absolute;
-      width: 100%; }
-      body #main #quote span:nth-child(1) {
-        position: relative;
-        font-family: Open Sans Condensed Bold;
-        font-size: 10rem;
-        color: #ccffdd;
-        top: 250; }
-      body #main #quote span:nth-child(2) {
-        position: relative;
+      left: 100; }
+      body #main .parent-container #logo h3 {
+        position: absolute;
         font-family: Playfair Display Regular;
-        font-size: 7rem;
-        color: #ccffdd;
-        top: 300; }
-      body #main #quote span:nth-child(3) {
-        position: relative;
-        font-family: Open Sans Condensed Bold;
-        font-size: 10rem;
-        color: #ccffdd;
-        top: 370; }
-  body #intro p {
-    font-family: Playfair Display Regular;
-    font-size: 2.5rem;
-    padding: 100px 0;
-    line-height: 40px; }
+        font-size: 3.75rem;
+        color: #fff;
+        margin-top: 16px;
+        padding-bottom: 5px;
+        transition: 600ms; }
+        body #main .parent-container #logo h3 span {
+          position: absolute;
+          color: #ccffdd;
+          top: 0;
+          left: 195;
+          transition: 600ms; }
+  body #main #quote {
+    position: absolute;
+    width: 100%; }
+    body #main #quote span:nth-child(1) {
+      position: relative;
+      font-family: Open Sans Condensed Bold;
+      font-size: 10rem;
+      color: #ccffdd;
+      top: 250; }
+    body #main #quote span:nth-child(2) {
+      position: relative;
+      font-family: Playfair Display Regular;
+      font-size: 7rem;
+      color: #ccffdd;
+      top: 300; }
+    body #main #quote span:nth-child(3) {
+      position: relative;
+      font-family: Open Sans Condensed Bold;
+      font-size: 10rem;
+      color: #ccffdd;
+      top: 370; }
+  body #intro {
+    position: relative;
+    z-index: 10;
+    background-color: #fff; }
+    body #intro p {
+      font-family: Playfair Display Regular;
+      font-size: 2.5rem;
+      padding: 100px 0;
+      line-height: 40px; }
   body #three_values {
     background-color: #ccffdd;
     width: 100%; }
@@ -236,7 +230,7 @@ body {
         position: relative;
         margin: 0;
         padding: 0;
-        left: 159;
+        left: 8.37%;
         transition: 600ms; }
 
 /*# sourceMappingURL=styles.css.map */

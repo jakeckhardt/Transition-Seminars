@@ -24,6 +24,30 @@ $(window).scroll(function() {
 });
 
 
+
+/*parallax features*/
+
+$(window).scroll(function() {
+  var wScroll = $(window).scrollTop();
+
+  $("#quote-1").css({
+    'transform' : 'translate(0px, '+ wScroll /5 +'%)'
+  });
+
+  $("#quote-2").css({
+    'transform' : 'translate(0px, '+ wScroll /6 +'%)'
+  });
+
+});
+
+
+
+
+
+
+
+
+
 /* Fade in effects*/
 
 $(window).scroll(function() {
