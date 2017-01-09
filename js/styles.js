@@ -31,11 +31,15 @@ $(window).scroll(function() {
   var wScroll = $(window).scrollTop();
 
   $("#quote-1").css({
-    'transform' : 'translate(0px, '+ wScroll /5 +'%)'
+    'transform' : 'translate(0px, '+ wScroll /6 +'%)'
   });
 
   $("#quote-2").css({
-    'transform' : 'translate(0px, '+ wScroll /6 +'%)'
+    'transform' : 'translate(0px, '+ wScroll /3.5 +'%)'
+  });
+
+  $("#quote-3").css({
+    'transform' : 'translate(0px, '+ wScroll /13 +'%)'
   });
 
 });
