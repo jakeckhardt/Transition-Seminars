@@ -3,12 +3,18 @@ $(window).load(function() {
 });
 
 
+
+
+
 /*Menu slide left on burger click*/
 
-$(".menu_button").click(function(event) {
-  $('#menu_button_container').toggleClass("pushed");
+$(".menu_button").click(function() {
+  $(".bar").toggleClass("pushed");
   $("#nav").toggleClass("nav-left");
 });
+
+
+
 
 
 /*Burger color change on scroll*/
@@ -39,7 +45,7 @@ $(window).scroll(function() {
   });
 
   $("#quote-3").css({
-    'transform' : 'translate(0px, '+ wScroll /13 +'%)'
+    'transform' : 'translate(0px, '+ wScroll /10 +'%)'
   });
 
 });
@@ -69,7 +75,7 @@ $(window).scroll(function() {
 
   }
 
-  if ($(window).scrollTop()>1500) {
+  if ($(window).scrollTop()>1400) {
     $("#strategy img").addClass("animated fadeInUp");
     $("#strategy span").addClass("animated fadeInUp");
     $("#strategy p").addClass("animated fadeInUp");
@@ -80,7 +86,11 @@ $(window).scroll(function() {
 
 
 
-
+$(window).resize(function(){
+  if ($(window).width() < 1200) {
+    $("#nav").css("left", "-1200");
+  }
+});
 		
 	
 
