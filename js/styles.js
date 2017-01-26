@@ -86,6 +86,12 @@ $(window).scroll(function() {
 
 
 
+$(window).width(function(){
+  if ($(window).width() < 1200) {
+    $("#nav").css("left", "-1200");
+  }
+});
+
 $(window).resize(function(){
   if ($(window).width() < 1200) {
     $("#nav").css("left", "-1200");

@@ -50,7 +50,7 @@ body {
         body #menu_button_container .menu_button .bar:nth-of-type(2):after {
           content: "";
           position: absolute;
-          border-right: 4.8rem solid #ffffff;
+          border-right: 4.8rem solid #fff;
           width: .8rem;
           height: .5rem;
           -webkit-transition: all 600ms ease-in-out;
@@ -273,7 +273,6 @@ body {
           position: absolute;
           top: -55;
           left: 85;
-          z-index: 1;
           opacity: 0;
           -webkit-animation-delay: 200ms;
           -moz-animation-delay: 200ms;
@@ -327,6 +326,8 @@ body {
         line-height: 40px; }
     body #clients #logos {
       padding: 0; }
+      body #clients #logos img {
+        padding: 10px; }
   body footer {
     background-color: #464646;
     display: flex;
@@ -343,7 +344,8 @@ body {
       body footer div span {
         color: #ccffdd; }
       body footer div:nth-of-type(2) {
-        padding: 30px 10px; }
+        padding: 30px 10px;
+        justify-content: flex-end; }
         body footer div:nth-of-type(2) a {
           padding: 0;
           margin: 0 10px; }
@@ -543,23 +545,53 @@ body {
           margin-bottom: 30px; } }
 @media (max-width: 540px) {
   html {
-    font-size: 4.5px; }
+    font-size: 7px; }
+    html body #main #menu_button_container .menu_button {
+      top: 2;
+      left: -7; }
+      html body #main #menu_button_container .menu_button .bar {
+        height: .5rem;
+        border-width: 4rem;
+        margin: .75rem 0; }
+        html body #main #menu_button_container .menu_button .bar:after {
+          height: .5rem;
+          border-width: 4rem; }
+      html body #main #menu_button_container .menu_button .bar-scroll:nth-of-type(2):after {
+        border-width: 4rem; }
     html body #main #quote {
       padding: 0; }
-      html body #main #quote span {
+      html body #main #quote span:nth-of-type(1), html body #main #quote span:nth-of-type(3) {
+        font-size: 8rem;
         padding: 0; }
+      html body #main #quote span:nth-of-type(2) {
+        font-size: 5rem; }
     html body #main .parent-container #logo {
-      left: 30;
+      left: 32;
       top: -5; }
-      html body #main .parent-container #logo h3 span {
-        left: 115; }
+      html body #main .parent-container #logo h3 {
+        font-size: 4rem; }
+        html body #main .parent-container #logo h3 span {
+          left: 150; }
     html body #three_values #vision div span {
-      top: -50; }
+      top: -65;
+      font-size: 11rem; }
     html body #three_values #vision div p {
       padding: 50px 0; }
     html body #three_values #strategy div span {
-      top: -50; }
+      top: -50;
+      font-size: 11rem; }
     html body #three_values #strategy div p {
-      padding: 50px 0; } }
+      padding: 50px 0; }
+    html body #clients span {
+      font-size: 11rem; }
+    html body footer div:nth-of-type(1) {
+      padding: 0;
+      justify-content: space-between;
+      margin: 0; }
+      html body footer div:nth-of-type(1) p {
+        font-size: 2.25rem;
+        padding: 30px 0; }
+    html body footer div:nth-of-type(2) img {
+      max-width: 40px; } }
 
 /*# sourceMappingURL=styles.css.map */
