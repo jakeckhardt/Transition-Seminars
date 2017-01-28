@@ -325,15 +325,15 @@ body {
         padding: 1.25% 0;
         line-height: 40px; }
     body #clients #logos {
-      padding: 0; }
+      padding: 0px; }
       body #clients #logos img {
         padding: 10px; }
-  body div {
+  body #prefooter {
     margin: 0;
     padding: 0; }
-    body div img {
+    body #prefooter img {
       margin: 0;
-      padding: 0 !important; }
+      padding: 0; }
   body footer {
     background: #464646;
     background-size: cover;
@@ -401,8 +401,8 @@ body {
         line-height: 35px; }
       html body #three_values #strategy p {
         line-height: 35px; }
-      html body footer div p {
-        font-size: 2.5rem; } }
+      html body footer div:nth-of-type(1) p {
+        font-size: 2.75rem; } }
 @media (max-width: 1220px) {
   html {
     font-size: 6px; }
