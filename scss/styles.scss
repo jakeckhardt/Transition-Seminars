@@ -25,7 +25,6 @@ html {
 			background-size: cover;
 			background-position: center;
 			height: 100vh;
-			background-attachment: fixed;
 		}
 
 
@@ -612,11 +611,6 @@ html {
 	.programs-body {
 
 		#main {
-			width: 100%;
-			background: url("../img/contact.jpg");
-			background-size: cover;
-			background-position: center;
-			height: 100%;
 
 			#menu_button_container {
 			position: fixed;
@@ -665,6 +659,14 @@ html {
 							transition: all 600ms ease-in-out;
 						}
 
+					}
+
+					.bar-scroll {
+						border-right: 4.8rem solid #464646;
+
+						&:nth-of-type(2):after {
+							border-right: 4.8rem solid #464646;
+						}
 					}
 
 
@@ -721,7 +723,7 @@ html {
 			height: 100%;
 			margin-left: -15px;
 			font-size: 5rem;
-			z-index: 15;
+			z-index: 98;
 			left:-470;
 			display: flex;
 			align-items: center;
@@ -799,9 +801,11 @@ html {
 			.parent-container {
 				position:relative;
 
+
 				#logo {
 					position: absolute;
 					left: 70;
+					z-index: 97;
 
 
 					h3 {
@@ -827,6 +831,133 @@ html {
 						    -o-transition: 600ms;
 							transition: 600ms;
 						}
+					}
+				}
+			}
+		}
+
+		#programs-header {
+			padding: 0;				
+
+			img {
+				padding: 0;
+			}
+
+			h1 {
+				font-family: Open Sans Condensed;
+				font-size: 15rem;
+				position: absolute;
+				color: #ccffdd;
+				top: 250;
+			}
+		}
+
+		#intro {
+
+			p {
+				font-family: Playfair Display;
+				font-size: 2.5rem;
+				line-height: 40px;
+				color: #464646;
+
+				&:nth-of-type(1) {
+					padding: 100px 0 25px 0;
+				}
+
+				&:nth-of-type(2) {
+					padding: 0px 0 100px 0;
+				}
+			}
+		}
+
+		.programs-info {
+			padding:0 0 25px 0;
+			position:relative;
+
+			.img-container {
+				padding: 0;
+				height: 500px;
+				overflow:hidden;
+
+				img {
+					padding:0;
+				}
+			}
+
+			h1 {
+				font-family: Open Sans Condensed;
+				font-size: 5rem;
+				padding: 50px 0;
+				margin: 0;
+			}
+
+			p {
+				font-family: Playfair Display;
+				font-size: 2.5rem;
+				line-height: 40px;
+				color: #464646;
+				padding: 25px 0;
+				margin:0;
+
+				&:nth-of-type(2), &:nth-of-type(3) {
+					padding:0 0 25px 0;
+				}
+			}
+
+			a{
+				padding: 10px 0;
+				font-family: Open Sans Condensed;
+				font-size: 2.5rem;
+				line-height: 40px;
+				color: #464646;
+				background-color: #ccffdd;
+				border-radius: 5px;
+				-webkit-transition: 600ms;
+			    -moz-transition: 600ms;
+			    -o-transition: 600ms;
+				transition: 600ms;
+
+				&:link, &:active, &:visited, &:hover {
+					color: #464646;
+				}
+
+				&:hover {
+					background-color: #b7e5c6;
+					text-decoration: none;
+				}
+			}
+
+			&:nth-of-type(3) {
+				
+				p {
+
+					&:nth-of-type(2) {
+						padding: 0;
+					}
+				}
+			}
+
+			.sidebar {
+				background-color: #ccffdd;
+				border-radius: 0 0 5px 5px;
+
+				h1 {
+					font-size: 3.5rem;
+					padding: 15px 0;
+					margin: 0;
+				}
+
+				p {
+					font-size: 2rem;
+					padding: 0 0 15px 10px;
+				}
+
+				ul {
+
+					li {
+						font-family: Playfair Display;
+						font-size: 2rem;
+						padding-bottom: 5px;
 					}
 				}
 			}
@@ -920,10 +1051,9 @@ html {
 
 		#main {
 			width: 100%;
-			background: url("../img/contact.jpg");
+			background: url("../img/programs-header.jpg");
 			background-size: cover;
-			background-position: center;
-			height: 100%;
+			background-position: center-top;
 
 			#menu_button_container {
 			position: fixed;

@@ -33,6 +33,7 @@ $(window).scroll(function() {
 
 /*parallax features*/
 
+
 $(window).scroll(function() {
   var wScroll = $(window).scrollTop();
 
@@ -48,6 +49,10 @@ $(window).scroll(function() {
     'transform' : 'translate(0px, '+ wScroll /10 +'%)'
   });
 
+  $("#programs-header h1").css({
+    'transform' : 'translate(0px, '+ wScroll /10 +'%)'
+  });
+
 });
 
 
@@ -58,7 +63,7 @@ $(window).scroll(function() {
 
 
 
-/* Fade in effects*/
+/* Index Fade in effects*/
 
 $(window).scroll(function() {
   if ($(window).scrollTop()>600) {
